@@ -5,7 +5,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 def hash_str(s: str):
     return hashlib.md5(s.encode()).hexdigest()
 
-
 def executor(task_func,task_list,num_threads=1):
     if num_threads<=1:
         for task in tqdm(task_list):

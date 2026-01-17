@@ -1,5 +1,5 @@
 from functools import wraps
-from .database import BaseDB
+from ..database.sqlite_db import BaseDB
 from pathlib import Path
 import hashlib
 import json
@@ -17,7 +17,6 @@ class CacheDB(BaseDB):
                 hash TEXT UNIQUE,
                 input TEXT,
                 output TEXT
-                
             );
             """
         super().__init__(db_path,table,create_table_sql)
