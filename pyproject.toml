@@ -8,7 +8,7 @@ include = ["dream_toolbox*"]
 
 [project]
 name = "dream_toolbox"
-version = "0.1.0"
+version = "0.1.2"
 description = "Multifunctional tool kit"
 readme = "README.md"
 requires-python = ">=3.8"
